@@ -4,12 +4,14 @@ const fibonacci = function(num) {
       }else if(num < 0){
             return 'OOPS';
       }
-      let fibArray = [1, 1];
+      let fibArray = [0, 1];
       for(let i = 0; i < num-2; i++) {
             fibArray.push(fibArray[i] + fibArray[i+1]);
       }
       return fibArray[num-1];
 };
+
+console.log(fibonacci("5"))
 
 // Do not edit below this line
 module.exports = fibonacci;
